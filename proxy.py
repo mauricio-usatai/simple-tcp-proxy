@@ -37,7 +37,7 @@ class TCPProxy:
                           established')
                           print('Connection with {} is closed'.format(addr[0]))
                           client.close()
-                  data = self.received_from(s, 10)
+                  data = self.received_from(s, 60)
                   print('Adding timeout')
                   time.sleep(1)
                   self.msg_queue[s].send(data)
