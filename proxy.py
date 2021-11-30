@@ -19,7 +19,7 @@ class TCPProxy:
       try:
           sock.setblocking(0)
           sock.bind((self.local_addr, int(self.local_port)))
-          sock.listen(3)
+          sock.listen()
           self.lsock.append(sock)
           print('[*] Listening on {0} {1}'  .format(self.local_addr,self.local_port))
           while True:
