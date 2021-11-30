@@ -99,7 +99,7 @@ class TCPProxy:
 
 if __name__ == '__main__':
   if len(sys.argv) != 5:
-    print('Usage: python3 shenannigans/proxy.py local_port local_addr remote_port remote_addr')
+    print('Usage: python3 proxy.py local_port local_addr remote_port remote_addr')
     sys.exit(0)
   
   local_port = sys.argv[1]
